@@ -1,0 +1,146 @@
+* {margin:0; padding:0; box-sizing:border-box; font-family:Segoe UI;}
+
+body {
+  background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+  color:white;
+  min-height:100vh;
+  transition:0.3s;
+}
+
+
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+}
+
+.navbar ul {
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+.navbar a {
+  color:white;
+  text-decoration:none;
+  padding:8px 16px;
+  border-radius:20px;
+  transition:.3s;
+}
+
+.navbar a:hover {
+  background:#00f2fe;
+  color:black;
+}
+
+
+.hero {
+  text-align:center;
+  margin-top:120px;
+}
+
+.hero h1 {font-size:50px;}
+.hero p {margin:15px 0; font-size:18px;}
+.btn {
+  background:#00f2fe;
+  padding:12px 30px;
+  border-radius:30px;
+  color:black;
+  text-decoration:none;
+}
+
+
+.dashboard {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:80px;
+}
+
+.card {
+  background:rgba(255,255,255,0.1);
+  padding:40px;
+  border-radius:20px;
+  font-size:20px;
+  box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+/* TODO */
+.todo-container {
+  width:400px;
+  margin:60px auto;
+  background:rgba(255,255,255,0.1);
+  padding:25px;
+  border-radius:20px;
+}
+
+.input-area {
+  display:flex;
+  gap:10px;
+}
+
+input {
+  flex:1;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+}
+
+button {
+  padding:10px 15px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+}
+
+.filters {
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+}
+
+.filters button {
+  background:rgba(255,255,255,0.2);
+  color:white;
+}
+
+li {
+  list-style:none;
+  background:rgba(255,255,255,0.2);
+  padding:10px;
+  margin-top:8px;
+  border-radius:10px;
+  display:flex;
+  justify-content:space-between;
+  animation:fade .3s;
+}
+
+li.completed {
+  text-decoration:line-through;
+  opacity:.6;
+}
+
+
+.settings {
+  text-align:center;
+  margin-top:100px;
+}
+
+
+.light {
+  background:linear-gradient(120deg,#fdfbfb,#ebedee);
+  color:black;
+}
+
+.light .navbar {background:white;}
+.light .navbar a {color:black;}
+.light .card,
+.light .todo-container {background:white;}
+
+@keyframes fade {
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1;}
+}
